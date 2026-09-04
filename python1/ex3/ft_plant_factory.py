@@ -30,7 +30,7 @@ def main() -> None:
     fern = Plant("Fern", 15, 120)
     plants = [rose, oak, cactus, sunflower, fern]
     for plant in plants:
-        print("Created: ", end = "")
+        print("Created: ", end="")
         plant.show()
 
 
