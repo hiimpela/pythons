@@ -1,5 +1,6 @@
 import alchemy
 
+
 def main() -> None:
     print("=== Alembic 4 ===")
 
@@ -17,6 +18,7 @@ def main() -> None:
 
     finally:
         print()
+
 
 if __name__ == "__main__":
     main()
