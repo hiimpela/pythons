@@ -1,0 +1,18 @@
+[project]
+name = "loading"
+version = "0.1.0"
+description = ""
+package-mode = false
+authors = [
+    {name = "mwisniew"}
+]
+requires-python = ">=3.10"
+dependencies = [
+    "numpy (>=1.25.0,<2.0.0)",
+    "pandas (>=2.1.0,<3.0.0)",
+    "matplotlib (>=3.7.0,<4.0.0)"
+]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

@@ -27,7 +27,7 @@ def main() -> None:
     print()
 
     print("Using 'secure_archive' to read from an inaccessible file:")
-    print(secure_archive("/etc/sudoers", 'r'))
+    print(secure_archive("/etc/locale.alias", 'w'))
     print()
 
     print("Using 'secure_archive' to read from a regular file:")
