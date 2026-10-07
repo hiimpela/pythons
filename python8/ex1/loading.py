@@ -1,6 +1,5 @@
 import importlib
 import sys
-from types import ModuleType
 
 
 def compare_managers() -> None:
@@ -26,7 +25,7 @@ def check_dependencies() -> bool:
     for package, description in required.items():
         try:
             module = importlib.import_module(package)
-            print(f"[OK] {package} ({module.__version__} - {description}")
+            print(f"[OK] {package} ({module.__version__}) - {description}")
 
         except ImportError:
             print(f"[KO] missing {package}")
@@ -34,7 +33,7 @@ def check_dependencies() -> bool:
     print()
     compare_managers()
     print()
-    
+
     if missing:
         print(f"Error: missing dependencies: {', '.join(missing)}")
         print("Install with pip: pip install -r requirements.txt")
@@ -42,6 +41,7 @@ def check_dependencies() -> bool:
               "poetry run python loading.py")
         return False
     return True
+
 
 def run_analysis() -> None:
 
@@ -88,6 +88,7 @@ def run_analysis() -> None:
     except Exception as error:
         print(f"Error: Data stream corrupted during analysis: {error}")
         sys.exit(1)
+
 
 def main() -> None:
 

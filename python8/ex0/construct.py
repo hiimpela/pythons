@@ -25,7 +25,7 @@ def main() -> None:
               "The machines can see everything you install.",
               '',
               "To enter the construct, run:",
-              "python -m venv matrix_env",
+              "python3 -m venv matrix_env",
               "source matrix_env/bin/activate # On Unix",
               "matrix_env\\Scripts\\activate # On Windows",
               '',
